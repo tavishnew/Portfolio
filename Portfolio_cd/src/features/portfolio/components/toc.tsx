@@ -16,7 +16,7 @@ export function TOC() {
         className="transition-opacity duration-200 data-[active-anchor=components]:opacity-30"
         items={[
           { title: "Overview", url: "/", depth: 2 },
-          { title: "About", url: "/#about", depth: 2 },
+          { title: "About", url: "#about", depth: 2 },
           { title: "Experience", url: "#experience", depth: 2 },
           { title: "Projects", url: "#projects", depth: 2 },
           { title: "Education", url: "#education", depth: 2 },

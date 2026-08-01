@@ -20,7 +20,7 @@ export function Overview() {
     <Panel>
       <h2 className="sr-only">Overview</h2>
 
-      <PanelContent className="screen-line-bottom">
+      <PanelContent id="about" className="screen-line-bottom">
         <Prose>
           <AboutIntro />
         </Prose>

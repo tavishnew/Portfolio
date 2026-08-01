@@ -142,6 +142,8 @@ export function useItems(): TOCItemInfo[] {
 }
 
 function getItemId(url: string) {
+  if (url === "/" || url === "/#top" || url === "#top") return "top"
+  if (url.startsWith("/#")) return url.slice(3)
   if (url.startsWith("#")) return url.slice(1)
   return null
 }

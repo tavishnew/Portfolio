@@ -30,6 +30,7 @@ export default function HomePage() {
       <JsonLdScript data={getPageJsonLd()} />
 
       <div className="[--cover-height:370px] [--separator-height:--spacing(8)] **:data-[slot=panel]:scroll-mt-[calc(var(--header-height)+var(--separator-height))]">
+        <div id="top" className="h-0" />
         <div className="mx-auto md:max-w-3xl">
           <ProfileActivityMosaicCover />
           <ProfileHeader />

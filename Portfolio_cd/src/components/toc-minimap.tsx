@@ -96,9 +96,24 @@ function Minimap() {
   )
 }
 
+function getAnchorId(url: string) {
+  if (url === "/" || url === "/#top" || url === "#top") return "top"
+  if (url.startsWith("/#")) return url.slice(3)
+  if (url.startsWith("#")) return url.slice(1)
+  if (url.startsWith("/")) return url.slice(1)
+  return url
+}
+
 function scrollToHeading(url: string) {
   history.pushState(null, "", url)
-  document.getElementById(url.replace("#", ""))?.scrollIntoView({
+
+  const id = getAnchorId(url)
+  if (id === "top") {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    return
+  }
+
+  document.getElementById(id)?.scrollIntoView({
     behavior: "smooth",
   })
 }
