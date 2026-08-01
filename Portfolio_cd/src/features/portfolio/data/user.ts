@@ -12,7 +12,6 @@ export const USER: User = {
     "I build, yes i really do",
     "Software Engineer",
     "From Concept to Deployment",
-    "Shitposter",
   ],
   address: "Uttar Pradesh, India",
   age: 21,

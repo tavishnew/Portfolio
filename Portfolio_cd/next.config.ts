@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
         }
       : undefined,
   turbopack: {
-    root: path.resolve(process.cwd()),
+    root: path.resolve(__dirname),
   },
   async redirects() {
     return [

@@ -7,11 +7,13 @@ import { useTiks } from "@rexa-developer/tiks/react"
 import {
   BoxIcon,
   BriefcaseBusinessIcon,
+  CameraIcon,
   CornerDownLeftIcon,
   DownloadIcon,
   GraduationCap,
   MonitorIcon,
   MoonStarIcon,
+  Music2Icon,
   SunMediumIcon,
   TextInitialIcon,
   TypeIcon,
@@ -99,7 +101,26 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
   openInNewTab: true,
 }))
 
-const OTHER_LINK_ITEMS: CommandLinkItem[] = []
+const OTHER_LINK_ITEMS: CommandLinkItem[] = [
+  {
+    title: "Music",
+    href:
+      "https://open.spotify.com/blend/taste-match/3e0317fa820bf153?si=FnImOg-vQKWsbQ7y00hthA&fallback=getapp&blendDecoration=5f9c38d2",
+    kind: "link",
+    icon: <Music2Icon />,
+    keywords: ["spotify", "blend", "music"],
+    openInNewTab: true,
+  },
+  {
+    title: "Instagram",
+    href:
+      "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=kx3b109",
+    kind: "link",
+    icon: <CameraIcon />,
+    keywords: ["instagram", "photos", "videos"],
+    openInNewTab: true,
+  },
+]
 
 // Tailwind class constants for deduplication
 const DIALOG_CONTAINER = "rounded-xl bg-background ring-1 ring-border"
