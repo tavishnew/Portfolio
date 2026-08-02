@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils"
 import { GraduationCap, School } from "lucide-react"
 import {
   Panel,
@@ -17,7 +16,7 @@ export function Education() {
       <PanelHeader>
         <PanelTitle>
           <a href={`#${ID}`}>Education</a>
-          <PanelTitleSup>({EDUCATION.length})</PanelTitleSup>
+          <PanelTitleSup>(3)</PanelTitleSup>
           <PanelTitleCopy id={ID} />
         </PanelTitle>
       </PanelHeader>

@@ -23,7 +23,7 @@ export function Projects() {
       <PanelHeader>
         <PanelTitle>
           <a href={`#${ID}`}>Projects</a>
-          <PanelTitleSup>({PROJECTS.length})</PanelTitleSup>
+          <PanelTitleSup>(2)</PanelTitleSup>
           <PanelTitleCopy id={ID} />
         </PanelTitle>
       </PanelHeader>
